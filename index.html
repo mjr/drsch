@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Driveschool</title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+      html, body {
+        height: 100%;
+      }
+      .home {
+        background-image: url('img/background-home.jpg');
+        background-position-x: -9.2rem;
+      }
+      .wrap {
+        min-height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      .btn-block {
+        width: 100%;
+      }
+      .p-x {
+        padding: 0.75rem 0.75rem !important;
+      }
+      .p-l {
+        padding-left: 0.375rem !important;
+      }
+      .p-r {
+        padding-right: 0.375rem !important;
+      }
+      .btn-light-blue-dark {
+        background-color: rgba(1, 87, 155, 0.56) !important;
+      }
+      .btn-light-blue {
+        background-color: rgba(142, 217, 251, 0.56) !important;
+      }
+      .text-white {
+        color: #fff;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .link-decoration {
+        text-decoration: underline;
+      }
+      .content-main {
+        padding-top: 1rem;
+      }
+      .p-t-link {
+        padding-top: 2rem !important;
+      }
+      .indicator-item {
+        height: 10px !important;
+        width: 10px !important;
+        background-color: rgba(208, 238, 255, 0.26) !important;
+      }
+      .indicator-item.active {
+        background-color: rgba(222, 230, 234, 0.92) !important;
+      }
+      .slides {
+        background-color: inherit !important;
+      }
+      .name-logo {
+        text-align: center;
+        font-weight: 800;
+        color: #fff;
+        padding-top: 4rem;
+        margin-top: 0;
+      }
+      .slider-div {
+        height: 100px !important;
+      }
+      .slider-ul {
+        height: 60px !important;
+      }
+    </style>
+  </head>
+  <body class="home">
+    <div class="wrap">
+      <div class="container">
+        <div class="content-header">
+          <h2 class="name-logo">DRIVE<br/>SCHOOL</h2>
+          <div class="slider slider-div">
+            <ul class="slides slider-ul">
+              <li class="active">
+                <div class="caption center-align">
+                  <p class="light grey-text text-lighten-3">Here's our small slogan.</p>
+                </div>
+              </li>
+              <li>
+                <div class="caption left-align">
+                  <p class="light grey-text text-lighten-3">Here's our small slogan.</p>
+                </div>
+              </li>
+              <li>
+                <div class="caption right-align">
+                  <p class="light grey-text text-lighten-3">Here's our small slogan.</p>
+                </div>
+              </li>
+              <li>
+                <div class="caption center-align">
+                  <p class="light grey-text text-lighten-3">Here's our small slogan.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-main">
+          <div class="row">
+            <div class="col s12">
+              <a class="waves-effect waves-light btn-large btn-block btn-light-blue-dark">Log In With Facebook</a>
+            </div>
+            <div class="col s6 p-x p-r">
+              <a class="waves-effect waves-light btn-large btn-block btn-light-blue">Sign Up</a>
+            </div>
+            <div class="col s6 p-x p-l">
+              <a class="waves-effect waves-light btn-large btn-block btn-light-blue">Try App</a>
+            </div>
+            <div class="col s12 p-t-link">
+              <p class="text-white text-center">Already have an account? <a href="#" class="text-white link-decoration">Log In</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').slider({full_width: true});
+      });
+    </script>
+  </body>
+</html>
